@@ -10,6 +10,7 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+        //Comment
         private ApplicationDbContext _context;
 
         public MoviesController()
