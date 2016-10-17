@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/large-svg-icons-part-3/512/camcorder_camcoder_camera-512.png"
+          type="image/png">
+    <title>@ViewBag.Title - VidOffice</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @*<script type="text/javascript">
+ 
+    $(window).load(function () {
+
+        var i = 0;
+
+        var images = ['@Url.Content("../Images/1511.jpg")',
+                '@Url.Content("../Images/5.jpg")';
+
+        var image = $('#slideit');
+
+        //Initial Background image setup
+
+        image.css('background-image', '../Images/5.jpg');
+ 
+        //Change image at regular intervals
+
+        setInterval(function () {
+
+            image.fadeOut(1000, function () {
+
+                image.css('background-image', 'url(' + images[i++] + ')');
+
+                image.fadeIn(1000);
+
+            });
+ 
+            if (i == images.length)
+
+            i = 0;
+
+        }, 8000);
+
+    });
+
+    </script>*@
+    <script>
+        $(window).load(function () {
+            alert("Hello");
+
+        });
+
+    </script>
+    
+</head>
+<body>
+    <ul class="cb-slideshow">
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>re·lax·a·tion</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>re·lax</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>se·re·nity</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>spec·ta·cu·lar</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>a·maze</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3>won·der</h3>
+            </div>
+        </li>
+        <li>
+            <span>Image 01</span>
+            <div>
+                <h3></h3>
+            </div>
+        </li>
+    </ul>
+        @Html.Partial("_NavBar")
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer id="footer">
+                <p>- VidOffice -<br />&copy; All rights reserved @DateTime.Now.Year</p>
+            </footer>
+        </div>
+        @Scripts.Render("~/bundles/lib")
+        @RenderSection("scripts", required: false)
+
+</body>
+</html>
