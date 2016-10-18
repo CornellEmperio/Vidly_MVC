@@ -32,7 +32,6 @@ h2, .h2 {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    border-bottom: 3px solid #fff;
     color: #06d5d5;
 }
 
